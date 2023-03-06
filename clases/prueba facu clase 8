@@ -1,0 +1,42 @@
+function sumar(num1, num2){return num1 + num2}
+function restar(num1, num2){return num1 - num2}
+function multiplicar(num1, num2){return num1 * num2}
+function dividir(num1, num2){return num1 / num2}
+
+console.log("-------------- Testeo de Operaciones / Calculadora --------------")
+
+console.log(sumar(1, 5));
+console.log(restar(6, 5));
+console.log(multiplicar(5, 3));
+console.log(dividir(10, 4));
+console.log(dividir(3, 0));
+
+function cuadradoDeUnNumero(num3){
+    let cuadrado = multiplicar(num3, num3) 
+    return cuadrado}
+
+console.log(cuadradoDeUnNumero(5))
+
+function promedioDeTresNumeros(num4, num5, num6){
+    let sum1 = sumar(num4, num5);
+    let sum2 = sumar(sum1, num6);
+    let promedio = dividir(sum2, 3);
+    return promedio;}
+
+console.log(promedioDeTresNumeros(2, 5, 4));
+
+function calcularPorcentaje(num7, num8) {
+    let multiplicacion = multiplicar(num7, num8);
+    let porcentaje = dividir(multiplicacion, 100)
+    return porcentaje;
+}
+
+console.log(calcularPorcentaje(100, 10));
+
+function generadorDePorcentaje(num9, num10){
+    let parcial = multiplicar(num9, 100);
+    let porcent = dividir(parcial, num10)
+    return porcent
+}
+
+console.log(generadorDePorcentaje(3, 2100));
